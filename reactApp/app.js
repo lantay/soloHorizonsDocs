@@ -7,5 +7,13 @@ var ReactDOM = require('react-dom');
 // .then(text => console.log(text))
 // .catch(err => {throw err})
 
-ReactDOM.render(<p>React lives!</p>,
-   document.getElementById('root'));
+require('./css/main.css');
+import Main from './Main';
+
+ReactDOM.render(
+  <div>
+    <h1>React lives!</h1>
+    <Main />
+  </div>
+  ,
+  document.getElementById('root'));
